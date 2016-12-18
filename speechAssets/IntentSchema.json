@@ -1,0 +1,62 @@
+{
+  "intents": [
+    {
+      "intent": "TrialsGuiderSearchIntent",
+      "slots": [
+        {
+          "name": "CancerType",
+          "type": "LIST_OF_CANCERS"
+        },
+{
+          "name": "TrialsPhase",
+          "type": "AMAZON.NUMBER"
+        },		
+        {
+          "name": "City",
+          "type": " AMAZON.US_CITY"
+        },
+        {
+          "name": "State",
+          "type": "AMAZON.US_STATE"
+        },
+        {
+          "name": "Address",
+          "type": "LIST_OF_ADDRESSES"
+        },
+		{
+          "name": "Radius",
+          "type": "AMAZON.NUMBER"
+        },
+		{
+          "name": "Hospital",
+          "type": "LIST_OF_HOSPITALS"
+        }		
+      ]
+    },
+    {
+      "intent": "TrialDiseaseIntent"
+    },
+	{
+      "intent": "TrialSitesIntent"
+    },
+    {
+      "intent": "NextTrialIntent"
+    },
+    {
+      "intent": "AMAZON.HelpIntent"
+    },
+	{
+      "intent": "AMAZON.StartOverIntent"
+    },
+    {
+      "intent": "AMAZON.StopIntent"
+    },
+    {
+      "intent": "AMAZON.CancelIntent"
+    },
+    
+    {
+      "intent": "AMAZON.RepeatIntent"
+    }
+  ]
+}

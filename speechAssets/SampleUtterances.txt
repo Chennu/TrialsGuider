@@ -1,0 +1,159 @@
+TrialsGuiderSearchIntent get trials in {City}
+TrialsGuiderSearchIntent get trials in {City} {State}
+TrialsGuiderSearchIntent get trials near by {Address}
+TrialsGuiderSearchIntent get trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent get trials at {Hospital}
+TrialsGuiderSearchIntent get trials at {Hospital} {State}
+TrialsGuiderSearchIntent search trials in {City}
+TrialsGuiderSearchIntent search trials in {City} {State}
+TrialsGuiderSearchIntent search trials near by {Address}
+TrialsGuiderSearchIntent search trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent search trials at {Hospital}
+TrialsGuiderSearchIntent search trials at {Hospital} {State}
+TrialsGuiderSearchIntent trials in {City}
+TrialsGuiderSearchIntent trials in {City} {State}
+TrialsGuiderSearchIntent trials near by {Address}
+TrialsGuiderSearchIntent trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent trials at {Hospital}
+TrialsGuiderSearchIntent trials at {Hospital} {State}
+TrialsGuiderSearchIntent get trials for {CancerType} cancer in {City}
+TrialsGuiderSearchIntent get trials for {CancerType} cancer in {City} {State}
+TrialsGuiderSearchIntent get trials for {CancerType} cancer near by {Address}
+TrialsGuiderSearchIntent get trials for {CancerType} cancer near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent get trials for {CancerType} cancer at {Hospital}
+TrialsGuiderSearchIntent get trials for {CancerType} cancer at {Hospital} {State}
+TrialsGuiderSearchIntent search trials for {CancerType} cancer in {City}
+TrialsGuiderSearchIntent search trials for {CancerType} cancer in {City} {State}
+TrialsGuiderSearchIntent search trials for {CancerType} cancer near by {Address}
+TrialsGuiderSearchIntent search trials for {CancerType} cancer near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent search trials for {CancerType} cancer at {Hospital}
+TrialsGuiderSearchIntent search trials for {CancerType} cancer at {Hospital} {State}
+TrialsGuiderSearchIntent trials for {CancerType} cancer in {City}
+TrialsGuiderSearchIntent trials for {CancerType} cancer in {City} {State}
+TrialsGuiderSearchIntent trials for {CancerType} cancer near by {Address}
+TrialsGuiderSearchIntent trials for {CancerType} cancer near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent trials for {CancerType} cancer at {Hospital}
+TrialsGuiderSearchIntent trials for {CancerType} cancer at {Hospital} {State}
+TrialsGuiderSearchIntent get {CancerType} cancer trials in {City}
+TrialsGuiderSearchIntent get {CancerType} cancer trials in {City} {State}
+TrialsGuiderSearchIntent get {CancerType} cancer trials near by {Address}
+TrialsGuiderSearchIntent get {CancerType} cancer trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent get {CancerType} cancer trials at {Hospital}
+TrialsGuiderSearchIntent get {CancerType} cancer trials at {Hospital} {State}
+TrialsGuiderSearchIntent search {CancerType} cancer trials in {City}
+TrialsGuiderSearchIntent search {CancerType} cancer trials in {City} {State}
+TrialsGuiderSearchIntent search {CancerType} cancer trials near by {Address}
+TrialsGuiderSearchIntent search {CancerType} cancer trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent search {CancerType} cancer trials at {Hospital}
+TrialsGuiderSearchIntent search {CancerType} cancer trials at {Hospital} {State}
+TrialsGuiderSearchIntent {CancerType} cancer trials in {City}
+TrialsGuiderSearchIntent {CancerType} cancer trials in {City} {State}
+TrialsGuiderSearchIntent {CancerType} cancer trials near by {Address}
+TrialsGuiderSearchIntent {CancerType} cancer trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent {CancerType} cancer trials at {Hospital}
+TrialsGuiderSearchIntent {CancerType} cancer trials at {Hospital} {State}
+TrialsGuiderSearchIntent get {CancerType} cancer phase {TrialsPhase} trials in {City}
+TrialsGuiderSearchIntent get {CancerType} cancer phase {TrialsPhase} trials in {City} {State}
+TrialsGuiderSearchIntent get {CancerType} cancer phase {TrialsPhase} trials near by {Address}
+TrialsGuiderSearchIntent get {CancerType} cancer phase {TrialsPhase} trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent get {CancerType} cancer phase {TrialsPhase} trials at {Hospital}
+TrialsGuiderSearchIntent get {CancerType} cancer phase {TrialsPhase} trials at {Hospital} {State}
+TrialsGuiderSearchIntent search {CancerType} cancer phase {TrialsPhase} trials in {City}
+TrialsGuiderSearchIntent search {CancerType} cancer phase {TrialsPhase} trials in {City} {State}
+TrialsGuiderSearchIntent search {CancerType} cancer phase {TrialsPhase} trials near by {Address}
+TrialsGuiderSearchIntent search {CancerType} cancer phase {TrialsPhase} trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent search {CancerType} cancer phase {TrialsPhase} trials at {Hospital}
+TrialsGuiderSearchIntent search {CancerType} cancer phase {TrialsPhase} trials at {Hospital} {State}
+TrialsGuiderSearchIntent {CancerType} cancer phase {TrialsPhase} trials in {City}
+TrialsGuiderSearchIntent {CancerType} cancer phase {TrialsPhase} trials in {City} {State}
+TrialsGuiderSearchIntent {CancerType} cancer phase {TrialsPhase} trials near by {Address}
+TrialsGuiderSearchIntent {CancerType} cancer phase {TrialsPhase} trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent {CancerType} cancer phase {TrialsPhase} trials at {Hospital}
+TrialsGuiderSearchIntent {CancerType} cancer phase {TrialsPhase} trials at {Hospital} {State}
+TrialsGuiderSearchIntent get phase {TrialsPhase} trials in {City}
+TrialsGuiderSearchIntent get phase {TrialsPhase} trials in {City} {State}
+TrialsGuiderSearchIntent get phase {TrialsPhase} trials near by {Address}
+TrialsGuiderSearchIntent get phase {TrialsPhase} trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent get phase {TrialsPhase} trials at {Hospital}
+TrialsGuiderSearchIntent get phase {TrialsPhase} trials at {Hospital} {State}
+TrialsGuiderSearchIntent search phase {TrialsPhase} trials in {City}
+TrialsGuiderSearchIntent search phase {TrialsPhase} trials in {City} {State}
+TrialsGuiderSearchIntent search phase {TrialsPhase} trials near by {Address}
+TrialsGuiderSearchIntent search phase {TrialsPhase} trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent search phase {TrialsPhase} trials at {Hospital}
+TrialsGuiderSearchIntent search phase {TrialsPhase} trials at {Hospital} {State}
+TrialsGuiderSearchIntent phase {TrialsPhase} trials in {City}
+TrialsGuiderSearchIntent phase {TrialsPhase} trials in {City} {State}
+TrialsGuiderSearchIntent phase {TrialsPhase} trials near by {Address}
+TrialsGuiderSearchIntent phase {TrialsPhase} trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent phase {TrialsPhase} trials at {Hospital}
+TrialsGuiderSearchIntent phase {TrialsPhase} trials at {Hospital} {State}
+TrialsGuiderSearchIntent get phase {TrialsPhase} {CancerType} cancer trials in {City}
+TrialsGuiderSearchIntent get phase {TrialsPhase} {CancerType} cancer trials in {City} {State}
+TrialsGuiderSearchIntent get phase {TrialsPhase} {CancerType} cancer trials near by {Address}
+TrialsGuiderSearchIntent get phase {TrialsPhase} {CancerType} cancer trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent get phase {TrialsPhase} {CancerType} cancer trials at {Hospital}
+TrialsGuiderSearchIntent get phase {TrialsPhase} {CancerType} cancer trials at {Hospital} {State}
+TrialsGuiderSearchIntent search phase {TrialsPhase} {CancerType} cancer trials in {City}
+TrialsGuiderSearchIntent search phase {TrialsPhase} {CancerType} cancer trials in {City} {State}
+TrialsGuiderSearchIntent search phase {TrialsPhase} {CancerType} cancer trials near by {Address}
+TrialsGuiderSearchIntent search phase {TrialsPhase} {CancerType} cancer trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent search phase {TrialsPhase} {CancerType} cancer trials at {Hospital}
+TrialsGuiderSearchIntent search phase {TrialsPhase} {CancerType} cancer trials at {Hospital} {State}
+TrialsGuiderSearchIntent phase {TrialsPhase} {CancerType} cancer trials in {City}
+TrialsGuiderSearchIntent phase {TrialsPhase} {CancerType} cancer trials in {City} {State}
+TrialsGuiderSearchIntent phase {TrialsPhase} {CancerType} cancer trials near by {Address}
+TrialsGuiderSearchIntent phase {TrialsPhase} {CancerType} cancer trials near by {Address} with in {Radius} miles
+TrialsGuiderSearchIntent phase {TrialsPhase} {CancerType} cancer trials at {Hospital}
+TrialsGuiderSearchIntent phase {TrialsPhase} {CancerType} cancer trials at {Hospital} {State}
+
+TrialDiseaseIntent diseases
+TrialDiseaseIntent next disease
+TrialDiseaseIntent next disease please
+TrialDiseaseIntent more diseases
+
+TrialSitesIntent sites
+TrialSitesIntent sites please
+TrialSitesIntent next site
+TrialSitesIntent next site please
+TrialSitesIntent more sites
+TrialSitesIntent organizations
+TrialSitesIntent organizations please
+TrialSitesIntent next organization
+TrialSitesIntent next organization please
+TrialSitesIntent more organizations
+TrialSitesIntent hospitals
+TrialSitesIntent hospitals please
+TrialSitesIntent next hospital
+TrialSitesIntent next hospital please
+TrialSitesIntent more hospitals
+TrialSitesIntent locations
+TrialSitesIntent locations please
+TrialSitesIntent next location
+TrialSitesIntent next location please
+TrialSitesIntent more locations
+
+NextTrialIntent trials
+NextTrialIntent next trial
+NextTrialIntent next trial please
+NextTrialIntent more trials
+
+AMAZON.StartOverIntent start trials guider
+AMAZON.StartOverIntent start trials search
+AMAZON.StartOverIntent start search
+AMAZON.StartOverIntent start guider
+AMAZON.StartOverIntent new trials
+AMAZON.StartOverIntent new trials guider
+AMAZON.StartOverIntent new trials search
+AMAZON.StartOverIntent new search
+AMAZON.StartOverIntent new guider
+AMAZON.StartOverIntent open trials guider
+AMAZON.StartOverIntent open trials search
+AMAZON.StartOverIntent open search
+AMAZON.StartOverIntent open trials
+AMAZON.StartOverIntent open guider
+
+AMAZON.StopIntent stop
+AMAZON.StopIntent bye
+AMAZON.StopIntent good bye
+AMAZON.StopIntent shut down
