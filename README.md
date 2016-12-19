@@ -79,7 +79,7 @@ This privacy policy applies solely to the Trials Guider Code usage.
 
 ### Licence
 
-** GNU General Public License, version 3 (GPL-3.0)** [Read more here..](https://opensource.org/licenses/GPL-3.0 "GNU General Public License")
+**GNU General Public License, version 3 (GPL-3.0)** [Read more here..](https://opensource.org/licenses/GPL-3.0 "GNU General Public License")
 
 ***
 “THIS TOOL DOES NOT PROVIDE MEDICAL ADVICE, AND IS FOR INFORMATIONAL AND EDUCATIONAL PURPOSES ONLY, AND IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL ADVICE, TREATMENT OR DIAGNOSIS. CALL YOUR DOCTOR TO RECEIVE MEDICAL ADVICE. IF YOU THINK YOU MAY HAVE A MEDICAL EMERGENCY, PLEASE DIAL 911.”
