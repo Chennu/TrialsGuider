@@ -24,6 +24,7 @@ I am very happy if you can contribute your valuable time to make this skill even
 6. Promoting this skill in your social media to reach all the users throughout the world to get the valid Cancer Trials information.
 
 ***
+## Trails Guider Architecture
 
 Cancer Clinical Trials are critically important to patients. This skill with Alexa helps patients to find the right trial for them in USA.
 
