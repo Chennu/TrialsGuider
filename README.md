@@ -21,7 +21,11 @@ With this intent Alexa plays back the number of active trials available in that 
 
 #General features
 "Repeat" during search plays back the previous response.
+
 "Next" or "Next Trial" or "More Trials" at any time after the trials search, it will responded with the next trial information.
+
 "Cancel" after the trials search will jump to the next trial.
+
 "Stop" quits the skill and responded with the Thank You message and Good Bye!
-"Help" gives more information about how to search trials
+
+"Help" gives more information about how to search trials.
