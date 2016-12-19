@@ -20,9 +20,9 @@ I am very happy if you can contribute your valuable time to make this skill even
  * Asking Alexa to send Trials Information
  * Sending active Cancer Clinical Trials search result back to the user email id
  * User can be opted out from the email subsription at any time
-2. Extending to support trails search for all the contries. Right now based version supports only to search Cacner Clinical Trials within the USA. NCI is maintaing all the world wide trials information. 
+2. Extending to support trails search for all the contries. Right now base version supports only to search Cacner Clinical Trials within the USA. NCI is maintaing all the world wide trials information. 
 3. Any Performance tuning
-4. Improved Voice User Interface Design
+4. Improving Voice User Interface Design. Sometimes Alexa is reading Cancter Trial phase "IIB" in a different way than expected. 
 5. Adding more Intents to make the usage of this skill is easy for all the users
 6. Promoting this skill in your social media to reach all the users throughout the world to get the valid Cancer Trials information.
 
