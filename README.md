@@ -2,6 +2,9 @@
 
 This is [Chennu's](https://www.chennu.com) entry for 
 the [Hackster.io The Amazon Alexa API Mashup Contest](https://www.hackster.io/contests/alexa-api-contest).
+
+The making-of story of this skill can be found here: [Trials Guider at Hackster.io](https://www.hackster.io/enrich-your-thoughts/trialsguider-a02c99 "Trials Guider at The Amazon Alexa API Mashup Contest")
+
 Since all entries are required to be published, I will be donating this base version to the community.
 I would like to see more high quality skills available on the Alexa platform. Hoping that by providing this skill to community, users will be able to take the techniques shown here and use them to build their own Alexa Skills. Or that people will contribute to make this skill even better than it is. 
 
