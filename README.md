@@ -2,8 +2,8 @@ Cancer Clinical Trials are critically important to patients. This skill with Ale
 
 ![](docs/TrialsGuider_Architecture_Transparent.png)
 
-The making-of story of this skill can be found here:
-https://www.hackster.io/enrich-your-thoughts/trialsguider-a02c99
+The making-of story of this skill can be found here: [Trials Guider at Hackster.io](https://www.hackster.io/enrich-your-thoughts/trialsguider-a02c99 "Trials Guider at The Amazon Alexa API Mashup Contest")
+
 
 #Finding right active cancer clinical trial.
 If you are interested in If you are interested in Trials Guider, go for something like:
