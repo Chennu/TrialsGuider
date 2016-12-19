@@ -4,10 +4,9 @@
 
 **PRIVACY POLICY**
 
-This privacy policy discloses the privacy practices for:
-* Trials Guider Alexa Skills
+This privacy policy discloses the privacy practices for Trials Guider Alexa Skill.
 
-This privacy policy applies solely to the Trials Guider Code.
+This privacy policy applies solely to the Trials Guider Code usage.
 
 **This policy explains the following:**
 
