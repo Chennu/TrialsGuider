@@ -1,5 +1,14 @@
 # Trails Guider
 
+This is [Chennu's](https://www.chennu.com) entry for 
+the [Hackster.io The Amazon Alexa API Mashup Contest](https://www.hackster.io/contests/alexa-api-contest).
+Since all entrants are required to be published, I will be donating this base version to the community.
+I would like to see more high quality skills available that make the most of the Alexa platform.
+It is hoped that by providing this, users will be able to take the techniques shown here and use them to better
+in their own skills. Or that people will contribute to make this skill even better than it is.
+
+***
+
 Cancer Clinical Trials are critically important to patients. This skill with Alexa helps patients to find the right trial for them in USA.
 
 ![](docs/TrialsGuider_Architecture_Transparent.png)
