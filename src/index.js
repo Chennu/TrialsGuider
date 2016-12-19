@@ -16,6 +16,8 @@
  * 
  * See the below Alexa Skills Kit reference URLs, which were used extensively to build this tool
  * 
+ * Requirements to build a service : https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/requirements-to-build-a-skill
+ * Voice Design HandBook :https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-handbook
  * SSML (Speech Synthesis Markup Language) : https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference
  * Built-in Library : https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/built-in-intent-library
  * Standard Intents: https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/standard-intents
