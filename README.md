@@ -3,19 +3,25 @@
 This is [Chennu's](https://www.chennu.com) entry for 
 the [Hackster.io The Amazon Alexa API Mashup Contest](https://www.hackster.io/contests/alexa-api-contest).
 Since all entries are required to be published, I will be donating this base version to the community.
-I would like to see more high quality skills available that make the most of the Alexa platform.
-It is hoped that by providing this, users will be able to take the techniques shown here and use them to build their own Alexa Skills. Or that people will contribute to make this skill even better than it is. 
+I would like to see more high quality skills available on the Alexa platform. Hoping that by providing this skill to community, users will be able to take the techniques shown here and use them to build their own Alexa Skills. Or that people will contribute to make this skill even better than it is. 
 
 I am very happy if you can contribute your valuable time to make this skill even better than it is.
 
 ### Need your contribution for this Skill on the following areas:
 
 1. Sending Trials information to the provided Email
+ * Subscribing with a valid email id
+ * Storing subscribed email id in AWS Dynamodb and doing all the CRUD operations through AWS Gateway. [Click for more info..](https://aws.amazon.com/blogs/compute/using-amazon-api-gateway-as-a-proxy-for-dynamodb/)
+ * Sending a unique token to the provided email id for verification
+ * Confirming back to the Alexa with a token to confirm the email id
+ * Asking Alexa to send Trials Information
+ * Sending active Cancer Clinical Trials search result back to the user email id
+ * User can be opted out from the email subsription at any time
 2. Extending to support trails search for all the contries. Right now based version supports only to search Cacner Clinical Trials within the USA. NCI is maintaing all the world wide trials information. 
 3. Any Performance tuning
 4. Improved Voice User Interface Design
 5. Adding more Intents to make the usage of this skill is easy for all the users
-6. Promoting this skill in your social media to reach all the users throughout the world
+6. Promoting this skill in your social media to reach all the users throughout the world to get the valid Cancer Trials information.
 
 ***
 
