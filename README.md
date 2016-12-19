@@ -61,6 +61,21 @@ With this intent Alexa plays back the number of active trials available in that 
 <a href="https://www.youtube.com/watch?v=pE0b4rU-Y4s" target="_blank"><img src="docs/trials-guider-youtube.JPG" 
 alt="Trials Guider with Alexa" width="500" height="350" border="10" /></a>
 
+##Privacy Policy
+
+This privacy policy applies solely to the Trials Guider Code usage.
+
+**This policy explains the following:**
+
+1. This project distributed "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND
+2. This skill is not collecting any user data.
+3. If you have used this code to build any Amzon Alexa Skill or any other applicaiton, Please keep the project source URL "https://chennu.github.io/TrialsGuider/" in your or client code.
+4. You are gree to intimate to the trialsguider@gmail.com for any code distribution and reuse
+5. You are agree to not use the Trils Guider name in any of your applications. You can use the code freely in your or client applications.
+6. You are agree to not distribute or use the Trials Guider logo in your or client applications.
+
+[Read more here](PRIVACY_POLICY.md)
+
 ***
 “THIS TOOL DOES NOT PROVIDE MEDICAL ADVICE, AND IS FOR INFORMATIONAL AND EDUCATIONAL PURPOSES ONLY, AND IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL ADVICE, TREATMENT OR DIAGNOSIS. CALL YOUR DOCTOR TO RECEIVE MEDICAL ADVICE. IF YOU THINK YOU MAY HAVE A MEDICAL EMERGENCY, PLEASE DIAL 911.”
 ***
