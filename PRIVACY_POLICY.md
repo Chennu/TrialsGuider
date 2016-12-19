@@ -31,4 +31,8 @@ This Privacy Policy may change from time to time and all updates will be posted 
 
 If you feel that I am not abiding by this privacy policy, you should contact me immediately via email at **trialsguider@gmail.com**
 
+***
+“THIS TOOL DOES NOT PROVIDE MEDICAL ADVICE, AND IS FOR INFORMATIONAL AND EDUCATIONAL PURPOSES ONLY, AND IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL ADVICE, TREATMENT OR DIAGNOSIS. CALL YOUR DOCTOR TO RECEIVE MEDICAL ADVICE. IF YOU THINK YOU MAY HAVE A MEDICAL EMERGENCY, PLEASE DIAL 911.”
+
+
 [<- Back to README](README.md)
