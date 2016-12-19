@@ -1,5 +1,5 @@
 # Trails Guider
-***
+
 Cancer Clinical Trials are critically important to patients. This skill with Alexa helps patients to find the right trial for them in USA.
 
 ![](docs/TrialsGuider_Architecture_Transparent.png)
