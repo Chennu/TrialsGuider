@@ -2,10 +2,20 @@
 
 This is [Chennu's](https://www.chennu.com) entry for 
 the [Hackster.io The Amazon Alexa API Mashup Contest](https://www.hackster.io/contests/alexa-api-contest).
-Since all entrants are required to be published, I will be donating this base version to the community.
+Since all entries are required to be published, I will be donating this base version to the community.
 I would like to see more high quality skills available that make the most of the Alexa platform.
-It is hoped that by providing this, users will be able to take the techniques shown here and use them to better
-in their own skills. Or that people will contribute to make this skill even better than it is.
+It is hoped that by providing this, users will be able to take the techniques shown here and use them to build their own Alexa Skills. Or that people will contribute to make this skill even better than it is. 
+
+I am very happy if you can contribute your valuable time to make this skill even better than it is.
+
+### Need your contribution for this Skill on the following areas:
+
+1. Sending Trials information to the provided Email
+2. Extending to support trails search for all the contries. Right now based version supports only to search Cacner Clinical Trials within the USA. NCI is maintaing all the world wide trials information. 
+3. Any Performance tuning
+4. Improved Voice User Interface Design
+5. Adding more Intents to make the usage of this skill is easy for all the users
+6. Promoting this skill in your social media to reach all the users throughout the world
 
 ***
 
