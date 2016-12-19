@@ -75,7 +75,7 @@ This privacy policy applies solely to the Trials Guider Code usage.
 5. You are agree to **not use** the **Trils Guider name** in any of your applications. You can **use** the **code freely** in your or client applications.
 6. You are agree to **not distribute** or use the **Trials Guider logo** in your or client applications.
 
-[Read more here](PRIVACY_POLICY.md)
+[Read more about PRIVACY POLICY](PRIVACY_POLICY.md)
 
 ***
 “THIS TOOL DOES NOT PROVIDE MEDICAL ADVICE, AND IS FOR INFORMATIONAL AND EDUCATIONAL PURPOSES ONLY, AND IS NOT A SUBSTITUTE FOR PROFESSIONAL MEDICAL ADVICE, TREATMENT OR DIAGNOSIS. CALL YOUR DOCTOR TO RECEIVE MEDICAL ADVICE. IF YOU THINK YOU MAY HAVE A MEDICAL EMERGENCY, PLEASE DIAL 911.”
