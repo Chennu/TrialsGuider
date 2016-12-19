@@ -1,5 +1,5 @@
 ## **Trials Guider**
-##### Terms and Conditions Privacy Policy
+### Terms and Conditions Privacy Policy
 ---
 
 **PRIVACY POLICY**
