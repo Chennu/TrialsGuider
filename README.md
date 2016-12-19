@@ -24,7 +24,8 @@ I am very happy if you can contribute your valuable time to make this skill even
 6. Promoting this skill in your social media to reach all the users throughout the world to get the valid Cancer Trials information.
 
 ***
-## Trails Guider Architecture
+
+### Trails Guider Architecture
 
 Cancer Clinical Trials are critically important to patients. This skill with Alexa helps patients to find the right trial for them in USA.
 
@@ -32,7 +33,7 @@ Cancer Clinical Trials are critically important to patients. This skill with Ale
 
 The making-of story of this skill can be found here: [Trials Guider at Hackster.io](https://www.hackster.io/enrich-your-thoughts/trialsguider-a02c99 "Trials Guider at The Amazon Alexa API Mashup Contest")
 
-##Finding right active cancer clinical trial.
+### Finding right active cancer clinical trial.
 If you are interested in If you are interested in Trials Guider, go for something like:
 ```
 "Alexa, Open trials guider"
@@ -46,7 +47,7 @@ With this intent Alexa plays back the number of active trials available in that 
 ![](docs/TrialsGuider_SearchTrials_Transparent.png)
 
 
-##General features
+### General features
 "Repeat" during search plays back the previous response.
 
 "Next" or "Next Trial" or "More Trials" at any time after the trials search, it will responded with the next trial information.
@@ -57,11 +58,11 @@ With this intent Alexa plays back the number of active trials available in that 
 
 "Help" gives more information about how to search trials.
 
-##Trials Guider with Alexa Testing
+### Trials Guider with Alexa Testing
 <a href="https://www.youtube.com/watch?v=pE0b4rU-Y4s" target="_blank"><img src="docs/trials-guider-youtube.JPG" 
 alt="Trials Guider with Alexa" width="500" height="350" border="10" /></a>
 
-##Privacy Policy
+### Privacy Policy
 
 This privacy policy applies solely to the Trials Guider Code usage.
 
