@@ -1,37 +1,27 @@
-## Welcome to GitHub Pages
+Cancer Clinical Trials are critically important to patients. This skill with Alexa helps patients to find the right trial for them in USA.
 
-You can use the [editor on GitHub](https://github.com/Chennu/TrialsGuider/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+![](docs/TrialsGuider_Architecture_Transparent.png)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The making-of story of this skill can be found here:
+https://www.hackster.io/enrich-your-thoughts/trialsguider-a02c99
 
-### Markdown
+#Finding right active cancer clinical trial.
+If you are interested in If you are interested in Trials Guider, go for something like:
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+> "Alexa, Open trials guider"
+> "Search trials in {City}"
 
-```markdown
-Syntax highlighted code block
+where {City} is any city name in USA of your choice.
 
-# Header 1
-## Header 2
-### Header 3
+With this intent Alexa plays back the number of active trials available in that city. Moreover, this skill provides all the trials information back to Alexa App.
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
+![](docs/TrialsGuider_SearchTrials_Transparent.png)
 
-**Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Chennu/TrialsGuider/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+#General features
+"Repeat" during search plays back the previous response.
+"Next" or "Next Trial" or "More Trials" at any time after the trials search, it will responded with the next trial information.
+"Cancel" after the trials search will jump to the next trial.
+"Stop" quits the skill and responded with the Thank You message and Good Bye!
+"Help" gives more information about how to search trials
