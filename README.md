@@ -42,9 +42,9 @@ If you are interested in Trials Guider, say something like:
 "Alexa, Open trials guider"
 "Search trials in {City}"
 ```
-where {City} is any city name in USA of your choice.
+where {**City**} is any city name in USA of your choice.
 
-With this intent Alexa plays back the number of active trials available in that city. Moreover, this skill provides all the trials information back to Alexa App.
+With this intent Alexa plays back the number of active trials available in that city. Moreover, this skill provides all the trials information back to Alexa moble App.
 
 
 ![](docs/TrialsGuider_SearchTrials_Transparent.png)
@@ -76,7 +76,7 @@ This privacy policy applies solely to the Trials Guider Code usage.
 3. If you have used this code to build any Amzon Alexa Skill or any other applicaiton, Please keep the project source URL "https://chennu.github.io/TrialsGuider/" in your or client code as a **courtesy**.
 4. You are gree to intimate to the **trialsguider@gmail.com** for any code distribution and reuse as a **courtesy**.
 5. You are agree to **not use** the **Trils Guider name** in any of your applications. You can **use** the **code freely** in your or client applications.
-6. You are agree to **not distribute** or use the **Trials Guider logo** in your or client applications.
+6. You are agree to **not distribute** or **use** the **Trials Guider logo** in your or client applications.
 
 [Read more about PRIVACY POLICY](PRIVACY_POLICY.md)
 
