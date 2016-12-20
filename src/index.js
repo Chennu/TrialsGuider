@@ -406,6 +406,8 @@ function handleNextTrialRequest(intent, session, callback) {
 	           cardText = "all the "+noOfTrials+"trials  were  anounced. \n say, trials  to  anounce  again  or  \n say,  diseases  or  \n say,  locations ";
 	           
 	           session.attributes.currentTrialIndex = 0;
+	           session.attributes.currentSitesIndex = -1;
+	           session.attributes.currentDiseaseIndex = -1;
 	       }else{
 	            trialName = session.attributes.trialsSearchResult[tmpTrialIndex].trialName;
 	            primaryPurpose = session.attributes.trialsSearchResult[tmpTrialIndex].primaryPurpose;
@@ -417,21 +419,29 @@ function handleNextTrialRequest(intent, session, callback) {
 	            speechOutput += " <s>there  are  <say-as interpret-as=\"number\">"+noOfSites+"</say-as>  locations</s>  and  <s><say-as interpret-as=\"number\">"+noOfDiseases+"</say-as> diseases are exist for this trial.</s>";
 	            speechOutput += " <s>say,  next  trial</s>,  or  <s>say,  diseases to  know  what  diseases  are  treating</s> ,  or  <s>say,  locations to  know  hospital locations</s>";
 	            cardText += " total active trials are "+noOfTrials+"\n";
-	            cardText += " trial "+(tmpTrialIndex+1)+" is \n"+trialName+". \n primary  purpose   is "+primaryPurpose+" for phase "+phase+". ";
+	            cardText += " trial "+(tmpTrialIndex+1)+" : \n"+trialName+". \n primary  purpose   is "+primaryPurpose+" for phase "+phase+". ";
 	            cardText += " there  are  "+noOfSites+" locations  and  "+noOfDiseases+" diseases are exist for this trial.\n";
 	            cardText += " say,  next  trial,  or  \n say,  diseases to  know  what  diseases  are  treating ,  or  \n say,  locations to  know  hospital locations\n";
 	            
 	            session.attributes.currentTrialIndex = tmpTrialIndex+1;
+	            session.attributes.currentSitesIndex = -1;
+	           session.attributes.currentDiseaseIndex = -1;
 	       }
 	    }else{
 	        //console.log("Trials search result not found.");
 	        speechOutput = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> ";
 	        cardText = " No active trials were found. Please say, something like, Get trials in Stillwater";
+	        session.attributes.currentTrialIndex = 0;
+	        session.attributes.currentSitesIndex = -1;
+	        session.attributes.currentDiseaseIndex = -1;
 	    }
 	}else{
 	    //console.log("currentSitesIndex not found.");
 	    speechOutput = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> ";
 	    cardText = " No active trials  were found. Please say,  something like, Get trials in Stillwater";
+	    session.attributes.currentTrialIndex = 0;
+	    session.attributes.currentSitesIndex = -1;
+	    session.attributes.currentDiseaseIndex = -1;
 	}
 	
 	repromptText = speechOutput;
