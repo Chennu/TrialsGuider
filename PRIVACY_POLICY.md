@@ -1,6 +1,6 @@
-## **Trials Guider**
-### Terms and Conditions Privacy Policy
----
+# **Trials Guider**
+## Terms and Conditions Privacy Policy
+***
 
 **PRIVACY POLICY**
 

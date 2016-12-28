@@ -80,6 +80,12 @@ This privacy policy applies solely to the Trials Guider Code usage.
 
 [Read more about PRIVACY POLICY](PRIVACY_POLICY.md)
 
+### Terms of Use
+
+Please read these Terms of Use ("Terms", "Terms of Use") carefully before using the Trials Guider Alexa Skill (the "Service") operated by Trials Guider ("us", "we", or "our").
+
+[Read more about PRIVACY POLICY](TERMS_OF_USE.md)
+
 ### Licence
 
 **GNU General Public License, version 3 (GPL-3.0)** [Read more here..](https://opensource.org/licenses/GPL-3.0 "GNU General Public License")
