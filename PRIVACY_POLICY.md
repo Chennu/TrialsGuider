@@ -59,3 +59,5 @@ We reserve the right to update or change our Privacy Policy at any time and you 
 **Contact Us**
 
 If you have any questions about this Privacy Policy, please contact us at trialsguider@gmail.com
+
+[<- README](README.md)

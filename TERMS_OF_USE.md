@@ -58,4 +58,7 @@ We reserve the right, at our sole discretion, to modify or replace these Terms a
 By continuing to access or use our Service after any revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, you are no longer authorized to use the Service.
 
 **Contact Us**
+
 If you have any questions about these Terms, please contact us at trialsguider@gmail.com
+
+[<- README](README.md)
