@@ -1,4 +1,6 @@
 TrialsGuiderSearchIntent get trials in {City}
+TrialsGuiderSearchIntent search trials in {Address}
+TrialsGuiderSearchIntent {CancerType} cancer trials in {Address}
 TrialsGuiderSearchIntent get trials in {City} {State}
 TrialsGuiderSearchIntent get trials near by {Address}
 TrialsGuiderSearchIntent get trials near by {Address} with in {Radius} miles
@@ -6,7 +8,6 @@ TrialsGuiderSearchIntent get trials nearby {Address}
 TrialsGuiderSearchIntent get trials nearby {Address} with in {Radius} miles
 TrialsGuiderSearchIntent get trials at {Hospital}
 TrialsGuiderSearchIntent get trials at {Hospital} {State}
-TrialsGuiderSearchIntent search trials in {City}
 TrialsGuiderSearchIntent search trials in {City} {State}
 TrialsGuiderSearchIntent search trials near by {Address}
 TrialsGuiderSearchIntent search trials near by {Address} with in {Radius} miles
@@ -62,7 +63,6 @@ TrialsGuiderSearchIntent search {CancerType} cancer trials nearby {Address}
 TrialsGuiderSearchIntent search {CancerType} cancer trials nearby {Address} with in {Radius} miles
 TrialsGuiderSearchIntent search {CancerType} cancer trials at {Hospital}
 TrialsGuiderSearchIntent search {CancerType} cancer trials at {Hospital} {State}
-TrialsGuiderSearchIntent {CancerType} cancer trials in {City}
 TrialsGuiderSearchIntent {CancerType} cancer trials in {City} {State}
 TrialsGuiderSearchIntent {CancerType} cancer trials near by {Address}
 TrialsGuiderSearchIntent {CancerType} cancer trials near by {Address} with in {Radius} miles
