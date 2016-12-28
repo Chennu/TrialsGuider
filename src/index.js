@@ -16,8 +16,6 @@
  * 
  * See the below Alexa Skills Kit reference URLs, which were used extensively to build this tool
  * 
- * Requirements to build a service : https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/requirements-to-build-a-skill
- * Voice Design HandBook :https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/alexa-skills-kit-voice-design-handbook
  * SSML (Speech Synthesis Markup Language) : https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/speech-synthesis-markup-language-ssml-reference
  * Built-in Library : https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/built-in-intent-library
  * Standard Intents: https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/built-in-intent-ref/standard-intents
@@ -62,7 +60,7 @@
 /**
  * Initializing App ID and other variables for the skill
  */
-var APP_ID = ''; //replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]',
+var APP_ID = 'amzn1.ask.skill.9d530271-6a39-4480-83f9-88f26fb584d8'; //replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]',
 CARD_TITLE = "Trials Guider",
 request = require('request'),
 usaStates = require('./usaStates'),
@@ -150,9 +148,9 @@ function onIntent(intentRequest, session, callback) {
 	} else if ("AMAZON.StopIntent" === intentName) {
 		handleFinishSessionRequest(intent, session, callback);
 	} else if ("AMAZON.CancelIntent" === intentName) {
-		handleNextTrialRequest(intent, session, callback);
+	    handleFinishSessionRequest(intent, session, callback);
 	} else {
-		throw "Invalid intent";
+		handleGetHelpRequest(intent, session, callback);
 	}
 }
 
@@ -221,11 +219,11 @@ function handleDiseasesRequest(intent, session, callback) {
 	       if(anouncedAllDesease){
 	           
 	           if(noOfDiseases == 0){
-	                speechOutput = " <s>no active deseases were found.</s> <s>say, locations</s> or <s>say, next trial</s> ";
-	                cardText = "no active deseases were found.\n say, locations or \n say, next trial";
+	                speechOutput = " <s>no active deseases were found.</s> <s>say, locations</s> or <s>say, next trial</s> or <s>say, help</s>";
+	                cardText = "no active deseases were found.\n say, locations or \n say, next trial or \n say, help\n";
 	           }else{
-	                speechOutput = " <s>all the <say-as interpret-as=\"number\">"+noOfDiseases+"</say-as> deseases were anounced.</s> <s>say, deseases to anounce again</s> or <s>say, locations</s> or <s>say, next trial</s> ";  
-	                cardText = "all the "+noOfDiseases+" deseases were anounced. \n say, deseases to anounce again or \n say, locations or \n say, next trial \n";   
+	                speechOutput = " <s>all the <say-as interpret-as=\"number\">"+noOfDiseases+"</say-as> deseases were anounced.</s> <s>say, deseases to anounce again</s> or <s>say, locations</s> or <s>say, next trial</s> or <s>say, help</s>";  
+	                cardText = "all the "+noOfDiseases+" deseases were anounced. \n say, deseases to anounce again or \n say, locations or \n say, next trial or \n say, help\n";   
 	           }
 	           session.attributes.currentDiseaseIndex = -1;
 	       }else{
@@ -239,26 +237,29 @@ function handleDiseasesRequest(intent, session, callback) {
 	       }
 	    }else{
 	        //console.log("Trials search result not found.");
-	        speechOutput = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> ";
-	        cardText = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> ";
+	        speechOutput = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> or <s>say, help</s>";
+	        cardText = " No  trials  were found.\nPlease say,  something like,\nGet  trials  in  Stillwater or \nsay, help\n";
 	    }
 	}else{
 	    //console.log("currentDiseaseIndex not found.");
 	    speechOutput = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> ";
-	    cardText = " No  trials  were found. Please say,  something like, \n Get  trials  in  Stillwater\n";
+	    cardText = " No  trials  were found. Please say,  something like, \n Get  trials  in  Stillwater or \nsay, help\n";
 	    
 	}
 	if((session.attributes.currentDiseaseIndex !== -1) && ((session.attributes.currentDiseaseIndex+1)<noOfDiseases)){
 	    speechOutput += " <s>you  are  listening  diseases  for  the  trial,</s>   <p>"+trialName+" .</p>  <s>primary  purpose  is  "+primaryPurpose+ "  for  phase "+phase+" .</s> ";
-	    speechOutput += " <s>there  are  <say-as interpret-as=\"number\">"+(noOfDiseases-(session.attributes.currentDiseaseIndex+1) )+"</say-as>  more   diseases  exist.</s>  <s>say,  next  disease.</s>  or   <s>more  diseases. </s>";
+	    speechOutput += " <s>there  are  <say-as interpret-as=\"number\">"+(noOfDiseases-(session.attributes.currentDiseaseIndex+1) )+"</say-as>  more   diseases  exist.</s>  <s>say,  next  disease.</s>  or   <s>more  diseases. </s> or <s>say, help</s>";
+	    speechOutput += "<p>this information is only for educational purposes</p>";
+	    
 	    cardText += " \n you  are  listening  diseases  for  the  trial, \n "+trialName+" \n primary  purpose  is  "+primaryPurpose+ "  for  phase "+phase+" \n ";
-	    cardText += " there  are  "+(noOfDiseases-(session.attributes.currentDiseaseIndex+1) )+"  more   diseases  exist. \n say,  next  disease.  or   \n more  diseases. or \n say, next trail.";
+	    cardText += " there  are  "+(noOfDiseases-(session.attributes.currentDiseaseIndex+1) )+"  more   diseases  exist. \n say,  next  disease.  or   \n more  diseases. or \n say, next trail or \nsay, help\n";
+	    cardText += "\n*** This information is only for educational purposes *** ";
 	}
 	
-	if((session.attributes.currentDiseaseIndex+1)===noOfDiseases){
+	if((session.attributes.currentDiseaseIndex+1) === noOfDiseases){
 		session.attributes.currentDiseaseIndex = -1;
-	    speechOutput += " <s>all the <say-as interpret-as=\"number\">"+noOfDiseases+"</say-as> deseases were anounced.</s> <s>say, deseases to anounce again</s> or <s>say, locations</s> or <s>say, next trial</s> ";  
-	    cardText += "all the "+noOfDiseases+" deseases were anounced. \n say, deseases to anounce again or \n say, locations or \n say, next trial \n";   
+	    speechOutput += " <s>all the <say-as interpret-as=\"number\">"+noOfDiseases+"</say-as> deseases were anounced.</s> <s>say, deseases to anounce again</s> or <s>say, locations</s> or <s>say, next trial</s> or <s>say, help</s>";  
+	    cardText += "all the "+noOfDiseases+" deseases were anounced. \n say, deseases to anounce again or \n say, locations or \n say, next trial or \nsay, help\n";   
 	}
 	
 	repromptText = speechOutput;
@@ -312,11 +313,11 @@ function handleSitesRequest(intent, session, callback) {
 	       //console.log("anouncedAllSites : "+anouncedAllSites);
 	       if(anouncedAllSites){
 	           if(noOfSites === 0){
-	              speechOutput = " <s>no active locations found were found.</s> <s>say, diseases</s>  or  <s>say,  next  trial</s> "; 
+	              speechOutput = " <s>no active locations found were found.</s> <s>say, diseases</s>  or  <s>say,  next  trial</s> or <s>say, help</s>"; 
 	              cardText = " no active locations found were found.\n say, diseases or  \n say,  next  trial"; 
 	           }else{
-	              speechOutput = " <s>all  the <say-as interpret-as=\"number\">"+noOfSites+"</say-as> locations  were  anounced.</s> <s>say, locations  to  anounce  again</s>  or  <s>say, diseases</s>  or  <s>say,  next  trial</s> ";  
-	              cardText = " all  the "+noOfSites+" locations  were  announced.\n say, locations  to announce again  or  \n say, diseases  or  \n say,  next  trial \n ";   
+	              speechOutput = " <s>all  the <say-as interpret-as=\"number\">"+noOfSites+"</say-as> locations  were  anounced.</s> <s>say, locations  to  anounce  again</s>  or  <s>say, diseases</s>  or  <s>say,  next  trial</s> or <s>say, help</s>";  
+	              cardText = " all  the "+noOfSites+" locations  were  announced.\n say, locations  to announce again  or  \n say, diseases  or  \n say,  next  trial or \nsay, help\n ";   
 	           }
 	           
 	           session.attributes.currentSitesIndex = -1;
@@ -331,36 +332,43 @@ function handleSitesRequest(intent, session, callback) {
 	                speechOutput += " <s>contact name is </s><s>  "+ siteObj.contactName+" . </s>";
 	                speechOutput += " <s>you  can  reach contact person at  </s><s>  "+ siteObj.contactPhone+" . </s>";
 	                speechOutput += " <s>you  can  email to </s><p>  "+ siteObj.contactEmail+" . </p>";
+	                speechOutput += "<p>this information is only for educational purposes</p>";
+	                
 	                cardText += "location "+(sitesIndex+1)+ " is  "+ siteObj.orgName+":\n ";
 	                cardText += siteObj.orgAddressCard+", \n";
 	                cardText += "Phone Number : "+ siteObj.orgPhone+"\n";
 	                cardText += "Contact Name: "+ siteObj.contactName+"\n";
 	                cardText += "Contact Phone Number: "+ siteObj.contactPhone+"\n";
 	                cardText += "Contact Email :   "+ siteObj.contactEmail+"\n";
+	                cardText += "\n*** This information is only for educational purposes *** ";
 	                session.attributes.currentSitesIndex = sitesIndex;
 	           }
 	       }
 	    }else{
 	        //console.log("Trials search result not found.");
-	        speechOutput = "<s> No  trials were found.</s> <s>Please say,  something like,</s><s> Get  trials  in  Stillwater </s>";
-	    	cardText = " No active trials  were found. Please say,  something like, Get trials in Stillwater";
+	        speechOutput = "<s> No  trials were found.</s> <s>Please say,  something like,</s><s> Get  trials  in  Stillwater </s> or <s>say, help</s>";
+	    	cardText = " No active trials  were found. \nPlease say,  something like, \nGet trials in Stillwater or \nsay, help\n";
 	    }
 	}else{
 	    //console.log("currentSitesIndex not found.");
-	    speechOutput = "<s> No  trials were found.</s> <s>Please say,  something like,</s><s> Get  trials  in  Stillwater </s>";
-	    cardText = " No active trials  were found. Please say,  something like, Get trials in Stillwater";
-	}
-	if((session.attributes.currentSitesIndex !== -1) && ((session.attributes.currentSitesIndex+1)<noOfSites)){
-	    speechOutput += " <s>you  are  listening  locations  for  the  trial,</s> <p>  "+trialName+" .</p> <s> primary  purpose  is  "+primaryPurpose+ "  for  phase "+phase+" . </s>";
-	    speechOutput += " <s>there  are <say-as interpret-as=\"number\"> "+(noOfSites-(session.attributes.currentSitesIndex+1) )+"</say-as>  more   locations  exist.</s>  <s>say,  next  location</s>  or   <s>more  locations</s> ";
-	    cardText += " \n you  are  listening  locations  for  the  trial,  \n"+trialName+" \n primary  purpose  is  "+primaryPurpose+ "  for  phase "+phase+" \n";
-	    cardText += " there  are "+(noOfSites-(session.attributes.currentSitesIndex+1) )+"  more   locations  exist. \n say,  next  location  or \n more  locations or \n say, next trial.";
+	    speechOutput = "<s> No  trials were found.</s> <s>Please say,  something like,</s><s> Get  trials  in  Stillwater </s> or <s>say, help</s>";
+	    cardText = " No active trials  were found. \nPlease say,  something like, \nGet trials in Stillwater or \nsay, help\n";
 	}
 	
-	if((session.attributes.currentSitesIndex+1)===noOfSites)){
+	if((session.attributes.currentSitesIndex !== -1) && ((session.attributes.currentSitesIndex+1)<noOfSites)){
+	    speechOutput += " <s>you  are  listening  locations  for  the  trial,</s> <p>  "+trialName+" .</p> <s> primary  purpose  is  "+primaryPurpose+ "  for  phase "+phase+" . </s>";
+	    speechOutput += " <s>there  are <say-as interpret-as=\"number\"> "+(noOfSites-(session.attributes.currentSitesIndex+1) )+"</say-as>  more   locations  exist.</s>  <s>say,  next  location</s>  or   <s>more  locations</s> or <s>say, help</s>";
+	    speechOutput += "<p>this information is only for educational purposes</p>";
+	    
+	    cardText += " \n you  are  listening  locations  for  the  trial,  \n"+trialName+" \n primary  purpose  is  "+primaryPurpose+ "  for  phase "+phase+" \n";
+	    cardText += " there  are "+(noOfSites-(session.attributes.currentSitesIndex+1) )+"  more   locations  exist. \n say,  next  location  or \n more  locations or \n say, next trial or \nsay, help\n";
+	    cardText += "\n*** This information is only for educational purposes *** ";
+	}
+	
+	if((session.attributes.currentSitesIndex+1) === noOfSites){
 		session.attributes.currentSitesIndex = -1;
-	    speechOutput += " <s>all  the <say-as interpret-as=\"number\">"+noOfSites+"</say-as> locations  were  anounced.</s> <s>say, locations  to  anounce  again</s>  or  <s>say, diseases</s>  or  <s>say,  next  trial</s> ";  
-	    cardText += " all  the "+noOfSites+" locations  were  announced.\n say, locations  to announce again  or  \n say, diseases  or  \n say,  next  trial \n ";   
+	    speechOutput += " <s>all  the <say-as interpret-as=\"number\">"+noOfSites+"</say-as> locations  were  anounced.</s> <s>say, locations  to  anounce  again</s>  or  <s>say, diseases</s>  or  <s>say,  next  trial</s> or <s>say, help</s>";  
+	    cardText += " all  the "+noOfSites+" locations  were  announced.\n say, locations  to announce again  or  \n say, diseases  or  \n say,  next  trial or \nsay, help\n ";   
 	}
 	
 	repromptText = speechOutput;
@@ -402,8 +410,8 @@ function handleNextTrialRequest(intent, session, callback) {
 	       }
 	       
 	       if(anouncedAllTrials){
-	           speechOutput = "<s> all  the <say-as interpret-as=\"number\">"+noOfTrials+"</say-as> trials  were  anounced.</s> <s>say, trials  to  anounce  again</s>  or  <s>say,  diseases</s>  or  <s>say,  locations</s> ";
-	           cardText = "all the "+noOfTrials+"trials  were  anounced. \n say, trials  to  anounce  again  or  \n say,  diseases  or  \n say,  locations ";
+	           speechOutput = "<s> all  the <say-as interpret-as=\"number\">"+noOfTrials+"</say-as> trials  were  anounced.</s> <s>say, trials  to  anounce  again</s>  or  <s>say,  diseases</s>  or  <s>say,  locations</s> or <s>say, help</s>";
+	           cardText = "all the "+noOfTrials+"trials  were  anounced. \n say, trials  to  anounce  again  or  \n say,  diseases  or  \n say,  locations or \nsay, help\n";
 	           
 	           session.attributes.currentTrialIndex = 0;
 	           session.attributes.currentSitesIndex = -1;
@@ -417,28 +425,31 @@ function handleNextTrialRequest(intent, session, callback) {
 	            speechOutput += " <s>total active trials are <say-as interpret-as=\"number\">"+noOfTrials+"</say-as> </s>";
 	            speechOutput += " <s>trial <say-as interpret-as=\"number\">"+(tmpTrialIndex+1)+"</say-as> </s>is  <p>"+trialName+".</p>  <s>primary  purpose   is "+primaryPurpose+" for phase "+phase+" .</s> ";
 	            speechOutput += " <s>there  are  <say-as interpret-as=\"number\">"+noOfSites+"</say-as>  locations</s>  and  <s><say-as interpret-as=\"number\">"+noOfDiseases+"</say-as> diseases are exist for this trial.</s>";
-	            speechOutput += " <s>say,  next  trial</s>,  or  <s>say,  diseases to  know  what  diseases  are  treating</s> ,  or  <s>say,  locations to  know  hospital locations</s>";
+	            speechOutput += " <s>say,  next  trial</s>,  or  <s>say,  diseases to  know  what  diseases  are  treating</s> ,  or  <s>say,  locations to  know  hospital locations</s> or <s>say, help</s>";
+	            speechOutput += "<p>this information is only for educational purposes</p>";
+
 	            cardText += " total active trials are "+noOfTrials+"\n";
 	            cardText += " trial "+(tmpTrialIndex+1)+" : \n"+trialName+". \n primary  purpose   is "+primaryPurpose+" for phase "+phase+". ";
 	            cardText += " there  are  "+noOfSites+" locations  and  "+noOfDiseases+" diseases are exist for this trial.\n";
-	            cardText += " say,  next  trial,  or  \n say,  diseases to  know  what  diseases  are  treating ,  or  \n say,  locations to  know  hospital locations\n";
+	            cardText += " say,  next  trial,  or  \n say,  diseases to  know  what  diseases  are  treating ,  or  \n say,  locations to  know  hospital locations or \nsay, help\n";
+	            cardText += "\n*** This information is only for educational purposes *** ";
 	            
 	            session.attributes.currentTrialIndex = tmpTrialIndex+1;
 	            session.attributes.currentSitesIndex = -1;
-	           session.attributes.currentDiseaseIndex = -1;
+	            session.attributes.currentDiseaseIndex = -1;
 	       }
 	    }else{
 	        //console.log("Trials search result not found.");
-	        speechOutput = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> ";
-	        cardText = " No active trials were found. Please say, something like, Get trials in Stillwater";
+	        speechOutput = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> or <s>say, help</s>";
+	        cardText = " No active trials were found. \nPlease say, something like, \nGet trials in Stillwater or \nsay, help\n";
 	        session.attributes.currentTrialIndex = 0;
 	        session.attributes.currentSitesIndex = -1;
 	        session.attributes.currentDiseaseIndex = -1;
 	    }
 	}else{
 	    //console.log("currentSitesIndex not found.");
-	    speechOutput = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> ";
-	    cardText = " No active trials  were found. Please say,  something like, Get trials in Stillwater";
+	    speechOutput = " <s>No  trials  were found.</s> <s>Please say,  something like,</s> <s>Get  trials  in  Stillwater</s> or <s>say, help</s>";
+	    cardText = " No active trials  were found. \nPlease say,  something like, \nGet trials in Stillwater or \nsay, help\n";
 	    session.attributes.currentTrialIndex = 0;
 	    session.attributes.currentSitesIndex = -1;
 	    session.attributes.currentDiseaseIndex = -1;
@@ -462,7 +473,7 @@ function getWelcomeResponse(callback) {
 	speechOutput = "<s>Welcome to Trials Guider.</s>",
 	shouldEndSession = false,
 	repromptText = " <s>Please  say,  something like,</s> <p>search  trials  in  Stillwater. </p>",
-	cardText = "Welcome to Trials Guider. \nPlease  say,  something like, search  trials  in  Stillwater.\n or say, Help.";
+	cardText = "Welcome to Trials Guider. \nPlease  say,  something like, search  trials  in  Stillwater.";
 	repromptText += " <s> or say,  Help</s>";
 	speechOutput += repromptText;
 
@@ -510,7 +521,7 @@ function handleGetHelpRequest(intent, session, callback) {
 		 + " <s>say,  start  search.</s> <s>To  start  a  new  search, </s>  or "
 		 + " <s>say, diseases</s> <s>To know diseases treating under trial,</s> or "
 		 + " <s> say, hospitals</s> or <s>locations</s> or <s>sites</s> <s>To know hospital locations,</s> or "
-		 + " <s> say,  repeat.</s> <s>To  repeat  the  previous information.</s>",
+		 + " <s> say,  repeat.</s> <s>To  repeat  the  previous information.</s> or <s>say, help</s>",
 	repromptText = " <s>To search cancer  clinical  trials,</s>"
 		 + " <p>say,  trials for breast cancer in Stillwater.</p>",
 	cardText = "I will guide you to get the proper cancer clinical trials in the requested location. \n"
@@ -518,7 +529,7 @@ function handleGetHelpRequest(intent, session, callback) {
 		 + " say, start search. To start a new search,  or \n"
 		 + " say, diseases To know diseases treating under trial, or \n"
 		 + " say, hospitals or locations or sites To know hospital locations, once search the trials or \n"
-		 + " say,  repeat. To  repeat  the  previous information.";
+		 + " say,  repeat. To  repeat  the  previous information or \nsay, help\n";
 	var shouldEndSession = false;
 	
 	callback(session.attributes,
@@ -565,11 +576,11 @@ function handleTrialsRequest(intent, session, callback) {
 							if (compntObj.types) {
 								var totalTypes = Object.keys(compntObj.types).length;
 								for (var typesIndex = 0; typesIndex < totalTypes; typesIndex++) {
-									if (compntObj.types[typesIndex] === " locality ") {
+									if (compntObj.types[typesIndex] === "locality") {
 										isLocality = true;
 									}
 									
-									if (compntObj.types[typesIndex] === " administrative_area_level_1 ") {
+									if (compntObj.types[typesIndex] === "administrative_area_level_1") {
 										isState = true;
 									}
 								}
@@ -746,7 +757,10 @@ function handleTrialsRequest(intent, session, callback) {
 							  "contactPhone": contactPhone,
 							  "contactEmail": contactEmail,
 							  "orgAddress": orgAddress,
-							  "orgAddressCard":orgAddressCard
+							  "orgAddressCard":orgAddressCard,
+							  "filterByCity":filterByCity,
+							  "filterByState":filterByState,
+							  "filterByCountry":filterByCountry
 							};
 							
 							 resultSites[sitesIndex] = resultSiteObj;	
@@ -777,9 +791,9 @@ function handleTrialsRequest(intent, session, callback) {
 	
 	//Preparing User response
 	if(totalTrials === 0){
-	    speechOutput = "<s>no  active  trials  found.</s>  <s>say,  start  search</s>  or  <s>start  trials  guider</s>  to  <s>provide  a  new  location.</s>";
+	    speechOutput = "<s>no  active  trials  found.</s>  <s>say,  start  search</s>  or  <s>start  trials  guider</s>  to  <s>provide  a  new  location.</s> or <s>say, help</s>";
 	    repromptText = speechOutput;
-	    cardText = "no  active  trials  found. \n say,  start  search  or \nstart  trials  guider to provide  a  new  location.";
+	    cardText = "no  active  trials  found. \n say,  start  search  or \nstart  trials  guider to provide  a  new  location or \nsay, help\n";
 	    sessionAttributes = {
 	            "speechOutput": speechOutput,
                 "repromptText": repromptText,
@@ -794,14 +808,15 @@ function handleTrialsRequest(intent, session, callback) {
 	       speechOutput = "<s>found  <say-as interpret-as=\"number\">"+noOfActiveTrials+"</say-as>  active  trials. </s>";
 	       speechOutput +=" <s>trial </s><say-as interpret-as=\"number\">1</say-as> is <p> "+resultTrials[0].trialName+" .</p>  <s>primary  purpose   is "+resultTrials[0].primaryPurpose+" </s>for <s>phase "+resultTrials[0].phase+" . </s>";
 	       speechOutput += " <s>there  are  <say-as interpret-as=\"number\">"+noOfSites+"</say-as>  locations  and  <say-as interpret-as=\"number\">"+noOfDiseases+"</say-as> diseases are exist.</s>";
-	       speechOutput += " <s>say,  next  trial</s>  or  <s>say,  diseases to  know  what  diseases  are  treating,</s>  or  <s>say,  locations to  know  hospital locations</s>";
+	       speechOutput += " <s>say,  next  trial</s>  or  <s>say,  diseases to  know  what  diseases  are  treating,</s>  or  <s>say,  locations to  know  hospital locations</s> or <s>say, help</s>";
+	       speechOutput += "<p>this information is only for educational purposes</p>";
 	       repromptText = speechOutput;
 	       
 	       cardText = "found "+noOfActiveTrials+" active  trials. \n";
 	       cardText +=" Trial 1 :  \n"+resultTrials[0].trialName+". \n primary purpose is "+resultTrials[0].primaryPurpose+" for phase "+resultTrials[0].phase+". ";
 	       cardText += " there  are  "+noOfSites+"  locations  and  "+noOfDiseases+" diseases are exist.\n";
-	       cardText += " say,  next  trial  or  \n say,  diseases to  know  what  diseases  are  treating,  or  \n say,  locations to  know  hospital locations";
-	       
+	       cardText += " say,  next  trial  or  \n say,  diseases to  know  what  diseases  are  treating,  or  \n say,  locations to  know  hospital locations or \nsay, help\n";
+	       cardText += "\n*** This information is only for educational purposes *** ";
 	       sessionAttributes = {
 	            "speechOutput": speechOutput,
                 "repromptText": repromptText,
@@ -813,8 +828,8 @@ function handleTrialsRequest(intent, session, callback) {
                 "trialsSearchResult":resultTrials
 	       };
 	    }else{
-	       speechOutput = "<s>no  active  trials  found.</s>  <s>say,  start  search</s>  or  <s>start  trials  guider</s>  to  <s>provide  a  new  location.</s>";
-	        cardText = "no  active  trials  found. \n say,  start  search  or \nstart  trials  guider to provide  a  new  location.";
+	       speechOutput = "<s>no  active  trials  found.</s>  <s>say,  start  search</s>  or  <s>start  trials  guider</s>  to  <s>provide  a  new  location.</s> or <s>say, help</s>";
+	        cardText = "no  active  trials  found. \n say,  start  search  or \nstart  trials  guider to provide  a  new  location or \nsay, help\n";
 	        repromptText = speechOutput;
 	        sessionAttributes = {
 	            "speechOutput": speechOutput,
