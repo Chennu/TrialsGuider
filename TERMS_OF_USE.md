@@ -34,8 +34,7 @@ This skill may contain links to Websites owned or operated by parties other than
 
 This Terms of Use may change from time to time and all updates will be posted on this page.
 
-
-If you feel that I am not abiding by this privacy policy, you should contact me immediately via email at **trialsguider@gmail.com**
+If you feel that I am not abiding by these terms, you should contact me immediately via email at **trialsguider@gmail.com**
 
 **Content Disclaimer**
 
