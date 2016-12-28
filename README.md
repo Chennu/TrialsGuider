@@ -67,16 +67,7 @@ alt="Trials Guider with Alexa" width="500" height="350" border="10" /></a>
 
 ### Privacy Policy
 
-This privacy policy applies solely to the Trials Guider Code usage.
-
-**This policy explains the following:**
-
-1. This project distributed "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND
-2. This skill is not collecting any user data.
-3. If you have used this code to build any Amzon Alexa Skill or any other applicaiton, Please keep the project source URL "https://chennu.github.io/TrialsGuider/" in your or client code as a **courtesy**.
-4. You are gree to intimate to the **trialsguider@gmail.com** for any code distribution and reuse as a **courtesy**.
-5. You are agree to **not use** the **Trils Guider name** in any of your applications. You can **use** the **code freely** in your or client applications.
-6. You are agree to **not distribute** or **use** the **Trials Guider logo** in your or client applications.
+We will not use or share your information with anyone except as described in this Privacy Policy.
 
 [Read more about PRIVACY POLICY](PRIVACY_POLICY.md)
 
@@ -84,7 +75,7 @@ This privacy policy applies solely to the Trials Guider Code usage.
 
 Please read these Terms of Use ("Terms", "Terms of Use") carefully before using the Trials Guider Alexa Skill (the "Service") operated by Trials Guider ("us", "we", or "our").
 
-[Read more about PRIVACY POLICY](TERMS_OF_USE.md)
+[Read more about TERMS OF USE](TERMS_OF_USE.md)
 
 ### Licence
 
