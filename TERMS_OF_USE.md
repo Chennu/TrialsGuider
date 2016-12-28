@@ -1,6 +1,5 @@
 # **Trials Guider**
-## Terms of Use
-***
+
 
 **TERMS OF USE**
 
