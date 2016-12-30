@@ -60,7 +60,7 @@
 /**
  * Initializing App ID and other variables for the skill
  */
-var APP_ID = 'amzn1.ask.skill.9d530271-6a39-4480-83f9-88f26fb584d8'; //replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]',
+var APP_ID = ''; //replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]',
 CARD_TITLE = "Trials Guider",
 request = require('request'),
 usaStates = require('./usaStates'),
